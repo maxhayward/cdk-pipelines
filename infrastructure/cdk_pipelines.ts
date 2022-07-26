@@ -3,7 +3,7 @@ import { CodePipeline, CodePipelineSource, ShellStep } from "aws-cdk-lib/pipelin
 import { Construct } from "constructs";
 
 export class CdkPipelines {
-  private pipeline;
+  private pipeline: CodePipeline;
 
   constructor(private parent: Construct, private stackName: string) {
     this.pipeline = new CodePipeline(this.parent, `${this.stackName}-Pipeline`, {
