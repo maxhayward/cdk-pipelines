@@ -17,7 +17,7 @@ export class CdkPipelines {
         input: CodePipelineSource.connection("maxhayward/cdk-pipelines", "main", {
           connectionArn: "arn:aws:codestar-connections:eu-west-1:984806001929:connection/718db28d-f7fe-4a5d-b765-7d883a0fd2a8",
         }),
-        commands: ['yarn ci', 'yarn build', 'yarn cdk synth']
+        commands: ["yarn build", "yarn cdk synth"],
       })
     });
 
