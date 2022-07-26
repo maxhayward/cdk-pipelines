@@ -8,6 +8,9 @@ install:
 build:
 	yarn build
 
+synth:
+	yarn cdk synth -c stackPrefix=$(STACKPREFIX)
+
 diff:
 	yarn cdk diff -c stackPrefix=$(STACKPREFIX)
 
