@@ -1,0 +1,6 @@
+export enum VPC_CIDRS {
+  PLANMYSHOP = "10.0.0.0/16",
+  CHECKDOMAIN = "10.1.0.0/16",
+  HOMEAUTOMATION = "10.2.0.0/16",
+  MATTTHOMAS = "10.3.0.0/16",
+}

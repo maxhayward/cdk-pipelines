@@ -1,0 +1,32 @@
+{
+  "name": "checkdomain",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": "max.hayward@gmail.com",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "cdk": "cdk",
+    "format_code": "prettier --list-different .",
+    "format_code:fix": "prettier --write .",
+    "lint": "eslint --config .eslintrc.js --fix \"src/*.ts\" --max-warnings 1",
+    "lint_readonly": "eslint --config .eslintrc.js \"src/*.ts\" --max-warnings 1",
+    "test": "jest --maxWorkers=4"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "aws-cdk": "2.33.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7",
+    "parse-domain": "5.0.0"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.33.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.16"
+  }
+}

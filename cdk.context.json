@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=984806001929:domainName=mattthomasracing.co.uk:region=us-east-1": {
+    "Id": "/hostedzone/Z06193203PH042IJPHCBQ",
+    "Name": "mattthomasracing.co.uk."
+  },
+  "hosted-zone:account=984806001929:domainName=mattthomasracing.co.uk:region=eu-west-1": {
+    "Id": "/hostedzone/Z06193203PH042IJPHCBQ",
+    "Name": "mattthomasracing.co.uk."
+  }
+}
