@@ -14,7 +14,7 @@ class S3App extends Stack {
   public readonly bucket: Bucket;
 
   constructor(private parent: Construct, private myStackName: string) {
-    super(parent, `${myStackName}-MyS3Stage`, {});
+    super(parent, `${myStackName}-MyS3App`, {});
 
     const bucketName = "max-test-cdk-pipelines-bucket";
 
