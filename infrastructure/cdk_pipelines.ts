@@ -2,10 +2,6 @@ import { Stage } from "aws-cdk-lib";
 import { CodePipeline, CodePipelineSource, ShellStep } from "aws-cdk-lib/pipelines";
 import { Construct } from "constructs";
 
-interface AddStageOptions {
-  appToAdd: Stage;
-}
-
 export class CdkPipelines {
   private pipeline;
 
@@ -22,7 +18,7 @@ export class CdkPipelines {
     });
   }
 
-  public addStage(options: AddStageOptions) {
-    this.pipeline.addStage(options.appToAdd);
+  public addStage(stage: Stage) {
+    this.pipeline.addStage(stage);
   }
 }
