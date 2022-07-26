@@ -1,6 +1,7 @@
 import { App, Stack, StackProps } from "aws-cdk-lib";
 import { ConfigService } from "./common/config/config.service";
 import { CdkPipelines } from "./cdk_pipelines";
+import { MyS3App } from "./my_s3_app";
 
 export class InfrastructureBase extends Stack {
   constructor(app: App, stackName: string, stackProps: StackProps) {
@@ -9,11 +10,10 @@ export class InfrastructureBase extends Stack {
 
   // Instantiate my constructs
   protected cdkPipelines = new CdkPipelines(this, this.stackName);
+  protected myApp = new MyS3App(this, this.stackName);
 
-  // Create the CDK Pipeline
-  protected cdkPipeline = this.cdkPipelines.createPipeline({
-    pipelineName: "Test"
-  });
+  // Add App 1 to the Pipeline
+  protected cdkPipeline = this.cdkPipelines.addStage(new MyS3App(this, this.stackName));
 }
 
 // Setup the application
