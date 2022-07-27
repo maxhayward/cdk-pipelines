@@ -1,6 +1,6 @@
-# CheckDomain
+# CDK Pipelines
 
-This project create the infrastructure and source code for the CheckDomain application.
+A 2 Day Project
 
 ## Useful commands
 
