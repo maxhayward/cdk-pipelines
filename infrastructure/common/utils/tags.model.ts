@@ -5,7 +5,7 @@ export enum EnvironmentTag {
 }
 
 export enum ServiceNameTag {
-  MATTTHOMAS = "mattthomas",
+  CDKPIPELINES = "cdkpipelines",
 }
 
 export enum ServiceTypeTag {
